@@ -3,6 +3,12 @@
 <head>
   <title>CSE412 | Demo Page</title>
   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vega"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite-api"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+  <script type="text/javascript" src="vega-script.js"></script>>
 </head>
 <body>
 <div class="content">
@@ -56,6 +62,11 @@
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
   </section>
+
+  <section id = "vegaDemo">
+    <div id="view"></div>
+  </section>
+
   <div class="footer">
     <a href="https://courses.cs.washington.edu/courses/cse442/20au/">CSE 412 Data Visualization</a>
     <a href="http://www.washington.edu">University of Washington</a>
