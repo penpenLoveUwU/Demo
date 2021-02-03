@@ -1,4 +1,5 @@
-      // setup API options
+import sunshineData from 'sunshine.csv'          
+     // setup API options
       const options = {
         config: {
           // Vega-Lite default configuration
@@ -16,13 +17,13 @@
           renderer: "canvas",
         },
       };
-
+      console.log(sunshineData);
       // register vega and vega-lite with the API
       vl.register(vega, vegaLite, options);
-
+     // var sunshine = add_data(vl, sunshine.csv, format_type = NULL);
       // your visualization goes here
       vl.markPoint({filled:true, color:'teal'})
-      .data('sunshine.csv')
+      .data(sunshineData)
       .select(
           vl.selectInterval().bind('scales')    // Just adding a line of code, how amazing!
       )
